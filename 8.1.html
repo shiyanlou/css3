@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>brother elements selector</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-family: "Microsoft Yahei";
+      }
+
+      div ~ span {
+        display: block;
+        margin-bottom: 5px;
+        height: 22px;
+        line-height: 22px;
+        color: #fff;
+        background: #900;
+      }
+    </style>
+  </head>
+  <body>
+    <span>The span brothers elements before div</span>
+    <span>The span brothers elements before div</span>
+    <div>
+      <span>The span for the div child element</span>
+      <span>The span for the div child element</span>
+    </div>
+    <span>The span brothers elements after div</span>
+    <span>The span brothers elements after div</span>
+    <span>The span brothers elements after div</span>
+  </body>
+</html>

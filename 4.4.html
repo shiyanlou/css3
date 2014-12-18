@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>structural pseudo classes selector 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #list {
+        font-family: "Microsoft yahei";
+        font-size: 14px;
+      }
+
+      #list li {
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background: #000;
+        list-style: none;
+      }
+
+      #list li:nth-child(4n+1) {
+        background: #900;
+      }/*从第一行开始算起 每隔4个（包含第四个）使用次样式*/
+
+      #list li:nth-child(4n+2) {
+        background: #090;
+      }/*从第二行开始算起 每隔4个（包含第四个）使用次样式*/
+
+      #list li:nth-child(4n+3) {
+        background: #009;
+      }/*从第三行开始算起 每隔4个（包含第四个）使用次样式*/
+
+      #list li:nth-child(4n+4) {
+        background: #990;
+      }/*从第四行开始算起 每隔4个（包含第四个）使用次样式*/
+    </style>
+  </head>
+  <body>
+    <ul id="list">
+      <li>option01 | W3Cfuns.com</li>
+      <li>option02 | W3Cfuns.com</li>
+      <li>option03 | W3Cfuns.com</li>
+      <li>option04 | W3Cfuns.com</li>
+      <li>option05 | W3Cfuns.com</li>
+      <li>option06 | W3Cfuns.com</li>
+      <li>option07 | W3Cfuns.com</li>
+      <li>option08 | W3Cfuns.com</li>
+      <li>option09 | W3Cfuns.com</li>
+      <li>option10 | W3Cfuns.com</li>
+      <li>option11 | W3Cfuns.com</li>
+      <li>option12 | W3Cfuns.com</li>
+    </ul>
+  </body>
+</html>

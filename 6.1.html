@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>state pseudo classes selector 1</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        
+        body {
+          margin-bottom: 20px;
+          font-family: "Microsoft yahei";
+          font-size: 14px;
+        }
+
+        ul {
+          margin: 50px auto;
+          width: 260px;
+          height: 100px;
+          list-style: none;
+        }
+
+        ul li {
+          margin-bottom: 10px;
+          overflow: hidden;
+        }
+
+        label, input {
+          display: inline;
+          float: left;
+        }
+
+        label {
+          padding-right: 8px;
+          width: 60px;
+          height: 27px;
+          line-height: 27px;
+          text-align: right;
+        }
+
+        input {
+          width: 200px;
+          height: 25px;
+          border: 1px #eee solid;
+          border-top: 1px #d1d1d1 solid;
+          outline:none;
+        }
+        
+        input:hover {
+          background: #eff7ff;
+        }
+
+        input:active {
+          background: #ffd;
+        }
+
+        input:focus {
+          background: #f2fddb;
+        }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <label for="userName">username:</label>
+        <input id="userName" type="text"/>
+      </li>
+      <li>
+        <label for="userPwd">password:</label>
+        <input id="userPwd" type="password"/>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>structural pseudo classes selector 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #list {
+        font-family: "Microsoft yahei";
+        font-size: 14px;
+      }
+
+      #list li {
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background: #000;
+        list-style: none;
+      }
+
+      #list li:first-child {
+        color: #000;
+        background: #fff;
+      }/*选择#list的第一个子元素li*/
+      
+      #list li:last-child {
+        color: #666;
+        background: #dfdfdf;
+      }/*选择#list的最后一个子元素li*/
+    </style>
+  </head>
+  <body>
+    <ul id="list">
+      <li>option1 | W3Cfuns.com!</li>
+      <li>option2 | W3Cfuns.com!</li>
+      <li>option3 | W3Cfuns.com!</li>
+      <li>option4 | W3Cfuns.com!</li>
+      <li>option5 | W3Cfuns.com!</li>
+    </ul>
+  </body>
+</html>

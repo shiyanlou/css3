@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>structural pseudo classes selector 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      #box *:not(h1) {
+        color: #900;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <h1>W3Cfuns.com</h1>
+      <p>W3Cfuns.com is good!</p>
+    </div>
+  </body>
+</html>

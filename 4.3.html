@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>structural pseudo classes selector 2</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #list {
+        font-family: "Microsoft yahei";
+        font-size: 14px;
+      }
+
+      #list li {
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background: #000;
+        list-style: none;
+      }
+
+      #list li:nth-child(odd) {
+        color: #000;
+        background: #f2f2f2;
+      }/*奇数行*/
+
+      #list li:nth-child(even) {
+        color: #666;
+        background: #dfdfdf;
+      }/*偶数行*/
+    </style>
+  </head>
+  <body>
+    <ul id="list">
+      <li>option01 | W3Cfuns.com</li>
+      <li>option02 | W3Cfuns.com</li>
+      <li>option03 | W3Cfuns.com</li>
+      <li>option04 | W3Cfuns.com</li>
+      <li>option05 | W3Cfuns.com</li>
+      <li>option06 | W3Cfuns.com</li>
+      <li>option07 | W3Cfuns.com</li>
+      <li>option08 | W3Cfuns.com</li>
+      <li>option09 | W3Cfuns.com</li>
+      <li>option10 | W3Cfuns.com</li>
+    </ul>
+  </body>
+</html>
